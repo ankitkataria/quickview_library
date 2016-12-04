@@ -1,0 +1,153 @@
+
+/* all the fonts*/
+@font-face {
+  font-family: 'myraid';
+  src: url('./fonts/MyriadPro-Regular.eot');
+  src: url('./fonts/MyriadPro-Regular.woff2') format('woff2'),
+       url('./fonts/MyriadPro-Regular.woff') format('woff'),
+       url('./fonts/MyriadPro-Regular.ttf') format('truetype'),
+       url('./fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg'),
+       url('./fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'oswald';
+  src: url('./fonts/Oswald-Regular.eot');
+  src: url('./fonts/Oswald-Regular.woff2') format('woff2'),
+       url('./fonts/Oswald-Regular.woff') format('woff'),
+       url('./fonts/Oswald-Regular.ttf') format('truetype'),
+       url('./fonts/Oswald-Regular.svg#Oswald-Regular') format('svg'),
+       url('./fonts/Oswald-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*the out of focus background  */
+.outfocus{
+	z-index:-1;
+	background-color: rgba(0,0,0,0.7);
+	height:100%;
+	width:100%;
+	position:fixed;
+	top:0;
+	left:0;
+    opacity:0;
+    transition: opacity 1s ease;
+}
+ 
+
+/* the main view of all library elements*/
+
+
+.element{
+	width:20%;
+	//height:400px;
+	padding: 1% ;
+	text-align:center;
+	//border:2px solid #7EA7C9;
+	border-radius: 2%;
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.libimg{
+	width:100%;
+	height: auto;
+	transition:transform 1s ease,opacity 0.5s ease;
+	
+}
+.imgdiv:hover .libimg{
+	transform: scale(1.15,1.15);
+	opacity: 0.7;
+}
+.imgdiv:hover .zoom{
+	z-index: 20;
+}
+.imghead{
+	
+	//border: 1px solid black;
+	margin:10% auto 6% auto; 
+	padding: 2% 0;
+}
+.imghead span{
+	font-size: 1.3em;
+	font-family: 'oswald';
+	color:white;
+	padding: 1% 8%;
+	background-color: #05487F;
+}
+.imgdiv{
+	font-family: 'oswald';
+	overflow: hidden;
+	position:relative;
+}
+.zoom{
+	z-index:-1;
+	background-color: transparent;
+	border:none;
+	position: absolute;
+	top:45%;
+	left:47%;
+	transition: z-index 0.5s ease;
+	color:#323436;
+}
+
+/*all the quick view properties */
+
+.qview{
+	position:fixed;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;	
+	justify-content: center;
+	align-items: center;
+	display:flex;
+    z-index: -1;
+
+}
+
+.qviewele{
+	flex:1 0 0;
+	display:flex;
+	margin:auto auto;
+	width:90%;
+	margin: 0 10% 0 10%;
+	opacity:0;
+	transition: opacity 1s ease;
+	border:0px solid transparent;
+	border-radius:5%;
+}
+.qviewimgdiv{
+    background: #e0e1e3 url("./images/omniwheel.jpg") no-repeat center center;
+	background-size: cover;
+	padding:4% 0;
+	flex: 1 0 0;
+	text-align: center;
+}
+.qviewimg{
+	width:67%;
+	height:auto;
+}
+.qviewinfo{
+	background-color:#05487F;
+	color:white;
+	font-size: 1.2em;
+	font-family:'myraid';
+	position:relative;
+	padding:6% 2%;
+	flex:1 0 0;
+}
+.qviewinfo h2{
+	font-family:'oswald';
+}
+#close-btn{
+	border:none;
+	background-color: transparent;
+	color:white;
+	position: absolute;
+	top:0;
+	right:0;
+}
+

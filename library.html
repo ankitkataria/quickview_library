@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>library_test</title>
+	<link rel="stylesheet" href="library.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	
+</head>
+<body>
+
+<div class="outfocus"></div>  
+
+
+<div class="qview">
+
+	<div  class="qviewele"> 
+		<div class="qviewimgdiv">
+		</div>
+		<div class="qviewinfo">
+
+		    <button id="close-btn"><i class="fa fa-times fa-2x" aria-hidden="true" onclick="hideQview()"></i>
+		    </button>
+			<p>
+			<h2>OMNI WHEELS</h2>
+			Omni wheels or poly wheels, similar to Mecanum wheels, are wheels with small discs around the circumference which are perpendicular to the rolling direction. The effect is that the wheel will roll with full force, but will also slide laterally with great ease, employed in holonomic drive systems.
+			<p>
+		</div>
+	</div>
+
+</div>
+
+
+
+<div class="container">
+
+	<div class="element" id="omni">
+		<div class="imgdiv" onclick="showQview(0)">
+        	<button class="zoom"><i class="fa fa-search-plus fa-2x"></i></button>
+			<img class="libimg" src="./images/omniwheel.jpg">      
+		</div>
+		<div class="imghead"><span>OMNI WHEELS</span></div>
+	</div>
+
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="library.js"></script>
+
+</body>
+</html>
