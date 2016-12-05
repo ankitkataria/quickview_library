@@ -109,15 +109,17 @@
 }
 
 .qviewele{
+	width:90%;
 	flex:1 0 0;
 	display:flex;
 	margin:auto auto;
-	width:90%;
 	margin: 0 10% 0 10%;
 	opacity:0;
 	transition: opacity 1s ease;
+	transition: height 1s ease;
 	border:0px solid transparent;
 	border-radius:5%;
+	height: 100%;
 }
 .qviewimgdiv{
     background: #e0e1e3 url("./images/omniwheel.jpg") no-repeat center center;
@@ -147,7 +149,7 @@
 	background-color: transparent;
 	color:white;
 	position: absolute;
-	top:0;
-	right:0;
+	top:2%;
+	right:1%;
 }
 
