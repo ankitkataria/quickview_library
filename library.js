@@ -3,7 +3,9 @@ function showQview(n){
 	
 	$(".container").fadeTo(1000,0.7);
 	var i=0;
-	document.getElementsByClassName("qview")[0].style.zIndex=999; 
+	document.getElementsByClassName("qview")[0].style.zIndex=999;
+	document.getElementsByClassName("qview")[0].style.transform="scale(1)";
+ 	document.getElementsByClassName("qview")[0].style.opacity=0.8; 
 	var ele=$(".qviewele");
 	for(i=0;i<ele.length;i++){
 	   ele[i].style.opacity=0;
@@ -22,9 +24,10 @@ function hideQview(n){
 	var ele=$(".qviewele");
 
 	for(i=0;i<ele.length;i++){
-	   ele[i].style.height="100%";
-	   ele[i].style.opacity=0;
+	    ele[i].style.opacity=0;
 	}
+	document.getElementsByClassName("qview")[0].style.transform="scale(2)";
+ 	document.getElementsByClassName("qview")[0].style.opacity=0.4;
 	document.getElementsByClassName("outfocus")[0].style.zIndex=-1;
     document.getElementsByClassName("outfocus")[0].style.opacity=0;
 	

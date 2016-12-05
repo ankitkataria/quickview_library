@@ -96,6 +96,9 @@
 /*all the quick view properties */
 
 .qview{
+	transform:scale(2);
+    opacity: 0.4;
+    transition: 1.5s;
 	position:fixed;
 	top:0;
 	left:0;
