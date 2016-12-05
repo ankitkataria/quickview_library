@@ -119,7 +119,6 @@
 	transition: height 1s ease;
 	border:0px solid transparent;
 	border-radius:5%;
-	height: 100%;
 }
 .qviewimgdiv{
     background: #e0e1e3 url("./images/omniwheel.jpg") no-repeat center center;
